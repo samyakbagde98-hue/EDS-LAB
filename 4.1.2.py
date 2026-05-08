@@ -1,4 +1,18 @@
 import pandas as pd
+
+# Provided dictionary of lists
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+}
+
+# Convert the dictionary to a DataFrame
+df = pd.DataFrame(data)
+
+# Display the original DataFrame
+print("Original DataFrame:")
+print(df)
+
 # Adding a new row
 newname=input("New name: ")
 newage=int(input("New age: "))
@@ -36,6 +50,4 @@ print("After modifying a column:")
 print(df)
 # Deleting a column
 df=df.drop(columns=["Age"])
-# Display the DataFrame after deleting a column
-print("After deleting a column:")
 print(df)
